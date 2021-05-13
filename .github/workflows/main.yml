@@ -17,6 +17,8 @@ jobs:
     
     # Setup Java environment in order to build the Android app.
     - uses: actions/checkout@v2
+    - name: check pubspec.yaml
+      run: cat pubspec.yaml
     - uses: actions/setup-java@v1
       with:
         java-version: '12.x'
